@@ -1,0 +1,44 @@
+// Playing box component style //
+
+.playingBox{
+    width: 10.7rem;
+    height: 11.2rem;
+    background: #191919;
+    box-shadow: 0px 2px 4px #00000040;
+    border-radius: 1.25rem;
+    padding: 1rem;
+    margin-left: 0.7rem;
+}
+
+.quizes{
+    color: #E8E8E8;
+    font-weight: 600;
+    font-size: 0.938rem;
+}
+.playingNow{
+    color: #666666;
+    font-weight: 500;
+    font-size: 0.75rem;
+}
+
+// BUTTON STYLE //
+.start{
+    background-color: rgba(61, 210, 204, 0.4);
+    border: none;
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 1.8rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.start a{ 
+    color: #3DD2CC;
+    text-decoration: none;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    font-size: 0.75rem;
+}
+// BUTTON STYLE END //
+

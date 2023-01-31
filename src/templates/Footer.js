@@ -1,4 +1,5 @@
 import "./Footer.scss";
+import "../components/CheckBoxes";
 
 const Footer = () => {
     return ( 

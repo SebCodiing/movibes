@@ -1,0 +1,57 @@
+main{
+    padding-left: 2rem;
+}
+
+.heroImg{
+    width: 56.813rem;
+    height: 18.75rem;
+    object-fit: cover;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+}
+
+.movieImg{
+    width: 12.5rem;
+    height: 19.688rem;
+    border-radius: 1.25rem;
+    user-select: none;
+}
+
+.trendingMovies, p{
+    color: #E8E8EB;
+}
+
+
+.movieGrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 2.25rem;
+    grid-row-gap: 6.063rem;
+}
+
+.movieContainer{
+    position: relative;
+}
+
+.movieRating{
+    display: flex;
+    user-select: none;
+    width: 4.25rem;
+    height: 1.75rem;
+    background: rgba(232, 232, 232, 0.15);
+    backdrop-filter: blur(0.156rem);
+    border-radius: 0rem 1.25rem;
+    position: absolute;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+}
+.star{
+    font-size: 1.25rem;
+    color: #e6b818
+}
+.rating{
+    font-weight: 500;
+    color: #E8E8EB;
+}

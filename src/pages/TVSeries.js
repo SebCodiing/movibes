@@ -3,7 +3,7 @@ import "./TVSeries.scss";
 const TVSeries = () => {
     return ( 
         <div>
-TVSeries
+            
         </div>
      );
 };

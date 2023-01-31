@@ -5,7 +5,7 @@ import Footer from "./templates/Footer";
 
 function App() {
   return (
-    <div>
+    <div className="grid">
       <Header />
       <Outlet />
       <Footer />
