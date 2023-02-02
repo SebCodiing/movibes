@@ -1,5 +1,5 @@
 main{
-    padding-left: 2rem;
+    padding: 6rem 0 0 2rem;
 }
 
 .heroImg{
@@ -25,9 +25,7 @@ main{
 .movieGrid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 2.25rem;
-    grid-row-gap: 6.063rem;
 }
 
 .movieContainer{

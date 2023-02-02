@@ -1,51 +1,34 @@
 import "./Home.scss";
 import "../global.scss";
-import { useEffect, useState } from "react";
-import axios from "axios";
-import { AiFillStar } from "react-icons/ai";
+// import { useEffect, useState } from "react";
+// import axios from "axios";
+import HorizontalList from "../components/HorizontalList";
+
 
 const apiURL = "https://api.themoviedb.org/3/movie/popular?api_key=3a4fcefe46f3db1f6864e930d246d190"
+const upcomingURL = "https://api.themoviedb.org/3/movie/upcoming?api_key=3a4fcefe46f3db1f6864e930d246d190"
+const seriesURL = "https://api.themoviedb.org/3/tv/popular?api_key=3a4fcefe46f3db1f6864e930d246d190"
+const trendingURL = "https://api.themoviedb.org/3/trending/movie/week?api_key=3a4fcefe46f3db1f6864e930d246d190"
+
+const monthNames = ["January", "February", "March", "April", "May", "June",
+"July", "August", "September", "October", "November", "December"
+];
+const date = new Date()
+const month = date.getMonth()
 
 const Home = () => {
-    const [movies, setMovies] = useState();
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        axios(apiURL)
-        .then(response => setMovies(response.data.results))
-        .finally(() => setLoading (false))
-    }, []);
-
-    movies && console.log(movies)
-    return loading ? <p>Loading</p> : (
+    return (
         <main>
         <div>
             <img className="heroImg" src={`http://image.tmdb.org/t/p/original/Aqldsq65Nj1KAkQD2MzkZsAk5N5.jpg`} alt="" />
 
-            <section className="upcomingMovies">
-                <p>Upcoming</p>
-            </section> 
-            <section className="movieSection">
-            <p>Trending</p>
-                <div className="movieGrid">
-                {movies.map((movie, index) => { if(index < 4) return (
-                    <article className="movieContainer">              
-                    <div className="movieRating">
-                    <AiFillStar className="star"> </AiFillStar>
-                    <p className="rating"> {`${movie.vote_average}`} </p>
-                    </div>
-                    <img className="movieImg" src={`http://image.tmdb.org/t/p/original${movie.poster_path}`} alt="" key={movie.id} />
-                    </article>
-                )})}
-                </div>  
-                </section>
-                </div>
-                </main>
-    )
-        
+            <HorizontalList url={apiURL} headline="Trending"/>
+            <HorizontalList url={upcomingURL} headline="Upcoming"/>
+            <HorizontalList url={seriesURL} headline="TV Series"/>
+            <HorizontalList url={trendingURL} headline={`Trending this ${monthNames[month]}`}/>
+    </div>
+    </main>
+    )};
+
     
-
-};
-
- 
 export default Home;
