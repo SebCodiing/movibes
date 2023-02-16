@@ -1,0 +1,77 @@
+.categoryBox{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    // grid-column-gap: 0px;
+    // grid-row-gap: 0px;
+}
+
+.genre__h3{
+    font-size: 1.5rem;
+
+}
+.checkbox__heading{
+    display:flex;
+    padding-top: 1rem;
+    padding-bottom:1rem;
+    justify-content:space-between;
+}
+
+
+.topfix{
+    display:flex;
+    position: relative;
+    width: 18.8rem;
+    top: 50%;
+    transform: translateX(15%);
+}
+hr{
+    width: 12.504rem;
+    color: rgba(102, 102, 102, 0.3)
+}
+
+label{
+    color:white;
+}
+.label__checkbox{
+    flex-wrap: nowrap;
+    flex-direction: row;
+    display:block;
+    left: 14rem;
+    position: relative;
+}
+
+.categories__genrepicker,
+.services__genrepicker{
+    background-color:#212121;
+    width: 15rem;
+    height: 25.5rem;
+    border-radius: 30px;
+    line-height: 2.905rem;
+    padding: 2rem;
+    font-size: 1rem;
+    
+}
+
+.seemore__btn{
+    color: #666666;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.uncheck__btn{
+    color: #666666;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.uncheck__btn:hover{
+    color: aqua;
+}
+.seemore__btn:hover{
+    color: aqua;
+}
+
+.label__checkbox{
+    background-color: green;
+}

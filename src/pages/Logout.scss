@@ -1,0 +1,90 @@
+p{
+    color: white;
+}
+a{
+    color: white;
+}
+
+.logo__position{
+    position: absolute;
+    left: 4rem;
+}
+
+input[type='checkbox']:checked {
+    accent-color: rgb(26, 85, 19);
+}
+
+input{
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    border-width: 0 0 2px 0;
+    border-color: #4D4B4B;
+    background-color: transparent;
+    color: white;
+}
+input:focus{
+    outline: none;
+    border-color: #BABABA;
+}
+::placeholder{
+    color: white;
+}
+
+.loginForm{
+    gap: 3.2rem;
+}
+
+.column{
+    position: relative;
+    width: 50vw;
+    height: 100vh;
+}
+
+.previewMovie{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.previewMovietext{
+    position:absolute;
+    bottom: 4rem;
+    left: 4rem;
+}
+
+.loginCentered{
+    width: 60%;
+    margin: 8rem auto 0;
+}
+.welcomeback{
+    color: #BABABA;
+}
+
+.googleBtn{
+    display: flex;
+    padding: 1.5rem 0 0 3rem;
+    gap: 1.2rem;
+    background: none;
+    border: 1px solid #4D4B4B;
+    border-radius: 30px;
+    width: 21.5rem;
+    height:4.5rem;
+    font-size: 1.2rem;
+}
+.loginBtn{
+    border: none;
+    background: #FEFEFE;
+    border-radius: 15px;
+    width: 21.5rem;
+    height: 3.75rem;
+}
+
+.decorated{
+    display: flex;
+    gap: 1.5rem;
+}
+.decorated:before, .decorated:after{
+    content:"";
+    border-bottom: 1px solid;
+    flex: 1 1;
+    margin: auto;
+}

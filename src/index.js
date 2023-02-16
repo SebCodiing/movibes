@@ -6,6 +6,8 @@ import Movies from "./pages/Movies";
 import TVSeries from "./pages/TVSeries";
 import Upcoming from "./pages/Upcoming";
 import Logout from "./pages/Logout";
+import SignUp from "./pages/SignUp";
+import Detail from "./pages/Detail";
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -21,6 +23,8 @@ const router = createBrowserRouter(
       <Route path="/tvseries" element={<TVSeries />} />
       <Route path="/upcoming" element={<Upcoming />} />
       <Route path="/logout" element={<Logout />} />
+      <Route path="/signup" element={<SignUp />} />
+      <Route path="/detail" element={<Detail />} />
     </Route>
   )
 );

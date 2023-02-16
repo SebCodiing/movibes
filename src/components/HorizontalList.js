@@ -2,10 +2,11 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { AiFillStar } from "react-icons/ai";
 
-const HorizontalList = ({headline, url}) => {
+const HorizontalList = ({headline, url, all}) => {
    
         const [movies, setMovies] = useState();
         const [loading, setLoading] = useState(true);
+        const [limit] = useState(all ? 20 : 4)
     
         useEffect(() => {
             axios(url)
@@ -18,7 +19,7 @@ const HorizontalList = ({headline, url}) => {
         <section className="movieSection">
             <h2>{headline}</h2>
                 <div className="movieGrid">
-                {movies.map((movie, index) => { if(index < 4) return (
+                {movies.map((movie, index) => { if(index < limit) return (
                     <article className="movieContainer">              
                     <div className="movieRating">
                     <AiFillStar className="star"> </AiFillStar>

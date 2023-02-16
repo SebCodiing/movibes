@@ -1,0 +1,27 @@
+.searchBar{
+    display: flex;
+    text-align: center;
+    background-color: #212121;
+    margin-bottom: 2rem;
+    border-radius: 30px;
+    gap: 1.5rem;
+    width:55rem;
+    height:4.1rem;
+
+    .search_icon{
+        // width: 2.2rem;
+        // height:2.2rem;
+        font-size: 1.6rem;
+        color: #666666;
+        padding:1rem 0 0 2.3rem;
+    }
+   p{
+       color: #666666;
+       padding-top: 0.75rem;
+       font-size: 1.6rem;
+   }
+}
+
+.searchField{
+    
+}
