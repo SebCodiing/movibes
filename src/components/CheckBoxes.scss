@@ -23,7 +23,6 @@
     position: relative;
     width: 18.8rem;
     top: 50%;
-    transform: translateX(15%);
 }
 hr{
     width: 12.504rem;
@@ -72,6 +71,37 @@ label{
     color: aqua;
 }
 
-.label__checkbox{
-    background-color: green;
-}
+input[type="checkbox"]:checked {
+    background: rgb(7, 155, 153);
+    color: white;
+  }
+  
+  input[type="checkbox"] {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    background: lightgray;
+    height: 30px;
+    width: 30px;
+    border-radius: 3px;
+    color: white;
+  }
+  
+  input[type="checkbox"]:after {
+    content: ' ';
+    position: relative;
+    left: 40%;
+    top: 30%;
+    width: 15%;
+    height: 40%;
+    border: solid rgb(0, 0, 0);
+    border-width: 0 3px 3px 0;
+    transform: rotate(50deg);
+    display: none;
+  }
+  
+  input[type="checkbox"]:checked:after {
+    display: block;
+  }

@@ -8,6 +8,7 @@ const Playing = () => {
             <p className="playingNow">50k people are playing <br /> now</p>
             <button className="start"><a href="#">Start playing</a> </button>
         </div>
+        
     );
 }
 

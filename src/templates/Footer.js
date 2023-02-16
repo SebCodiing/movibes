@@ -1,5 +1,4 @@
 import "./Footer.scss";
-import "../components/CheckBoxes";
 import { useLocation } from "react-router-dom";
 import CheckBoxes from "../components/CheckBoxes";
 import Notifications from "../components/Notifications";

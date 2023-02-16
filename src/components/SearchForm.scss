@@ -20,8 +20,18 @@
        padding-top: 0.75rem;
        font-size: 1.6rem;
    }
+
+   input{
+       display: flex;
+       text-decoration: none;
+   }
 }
 
+::placeholder{
+    color:red;
+}
 .searchField{
-    
+    border:none;
+    width: 55rem;
+    height: 4.3rem;
 }
